@@ -1,0 +1,11 @@
+function isLeapYear(year) {
+   return (year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0);
+ }
+ const date = new Date('2001-02-29');
+ const year = date.getFullYear();
+ const result = isLeapYear(year);
+ if (result) {
+   console.log(`${year} is a leap year.`);
+ } else {
+   console.log(`${year} is not a leap year.`);
+ }
